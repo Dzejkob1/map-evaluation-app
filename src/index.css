@@ -1,0 +1,196 @@
+/* ===== GLOBÁLNÍ STYL ===== */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Inter', sans-serif;
+  background: 
+    linear-gradient(to bottom right, #f4f7fb, #eef3f9);
+  color: #2d3748;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* Jemný vzor přes celé pozadí */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(rgba(0, 123, 255, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ===== NAVIGACE ===== */
+
+nav {
+  margin-top: 2rem;
+}
+
+nav a {
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.9rem 2rem;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.25);
+  font-weight: 500;
+}
+
+nav a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 123, 255, 0.35);
+}
+
+/* ===== HEADER ===== */
+
+.header {
+  background: linear-gradient(135deg, #007bff, #004ea8);
+  color: white;
+  padding: 2.5rem 1rem;
+  border-radius: 0 0 0px 0px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.header h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.6rem;
+  letter-spacing: 0.5px;
+}
+
+/* ===== HLAVNÍ OBSAH ===== */
+
+.main-content {
+  padding: 3rem 2rem;
+}
+
+/* ===== BUBLINY (odkazy) ===== */
+
+.bubble-container {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.bubble {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.bubble:hover {
+  transform: scale(1.06);
+  box-shadow: 0 15px 35px rgba(0, 123, 255, 0.35);
+}
+
+.bubble::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2), transparent 70%);
+  top: -20%;
+  left: -20%;
+}
+
+.bubble-icon {
+  font-size: 2.6rem;
+}
+
+.bubble-text {
+  margin-top: 0.7rem;
+  font-weight: 600;
+}
+
+/* ===== ÚVOD ===== */
+
+.intro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.intro-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+.intro-text h2 {
+  color: #0056b3;
+  margin-bottom: 1rem;
+}
+
+.intro-text ul {
+  margin-top: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.intro-text li {
+  margin: 0.6rem 0;
+}
+
+.intro-text li::before {
+  content: "•";
+  color: #d35400; /* tmavě oranžová akcent */
+  margin-right: 0.5rem;
+}
+
+.intro-image img {
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== TLAČÍTKO ZPĚT ===== */
+
+.back-home {
+  margin-top: 2.5rem;
+}
+
+.back-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.25);
+}
+
+.back-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.35);
+}
+
+/* ===== FOOTER ===== */
+
+.footer {
+  background: #f1f5f9;
+  padding: 1.2rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+  border-top: 1px solid #e2e8f0;
+}
