@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/map-evaluation-app/static/css/main.7207ef8c.css",
-    "main.js": "/map-evaluation-app/static/js/main.2fe0a462.js",
+    "main.js": "/map-evaluation-app/static/js/main.f1d1eff9.js",
     "static/media/mapy_upol.png": "/map-evaluation-app/static/media/mapy_upol.29aaacedd48c8e6a3b7b.png",
     "index.html": "/map-evaluation-app/index.html",
     "main.7207ef8c.css.map": "/map-evaluation-app/static/css/main.7207ef8c.css.map",
-    "main.2fe0a462.js.map": "/map-evaluation-app/static/js/main.2fe0a462.js.map"
+    "main.f1d1eff9.js.map": "/map-evaluation-app/static/js/main.f1d1eff9.js.map"
   },
   "entrypoints": [
     "static/css/main.7207ef8c.css",
-    "static/js/main.2fe0a462.js"
+    "static/js/main.f1d1eff9.js"
   ]
 }
